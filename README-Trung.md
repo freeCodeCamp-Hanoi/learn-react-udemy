@@ -4,7 +4,7 @@ Ghi chú của Trung Nguyễn Minh:
     - Chỉ 25% thời lượng dành cho React (01 app Youtube search)
     - Tận 75% thời lượng dành cho Redux (và React Router) (03 app còn lại)
 
-- Dẫu Redux hiện tại cực kỳ phổ biến, rất nhiều người cứ dùng React là dùng theo Redux, nhưng vẫn cần luyện tập thêm React trước khi học đến Redux. Đây là những gì Dan Abramov - tác giả của Redux viết:
+- Dẫu Redux hiện tại cực kỳ phổ biến, rất nhiều người cứ dùng React là dùng theo Redux, nhưng vẫn cần luyện tập thêm React trước khi học đến Redux. [[Đây là những gì Dan Abramov - tác giả của Redux viết]](https://stackoverflow.com/questions/36634522/how-to-avoid-using-setprops-in-react/36636886#36636886):
     > It looks like you dived into using Redux without first getting a firm grip of React. I wouldn’t recommend doing this because you appear to be somewhat confused now.
     >
     > [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) is a great guide and I recommend you to go through it first and get comfortable with the idea of state ownership in React, before using Redux.
