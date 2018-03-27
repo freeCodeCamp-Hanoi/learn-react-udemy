@@ -1,7 +1,9 @@
 # learn-react-udemy
 Nhóm học Udemy course "Modern React with Redux" (Stephen Grider)
 
-Link khóa học: https://www.udemy.com/react-redux/
+- Link khóa học: https://www.udemy.com/react-redux/
+- Ghi chú:
+    - của [Trung](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/README-Trung.md)
 
 
 ## Tham khảo:
