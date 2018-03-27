@@ -23,7 +23,7 @@
 
         - Tự làm 2 -3 "app" chỉ có MỘT và CHỈ MỘT trang bằng React. Một app dạng này có thể tham khảo là [Pabla](https://goshakkk.name/pabla/index.html)
 
-        - Học theo [tutorial của chính React Router]((https://github.com/reactjs/react-router-tutorial/tree/master/lessons/01-setting-up). Như đã nói ở trên, phần routing trong React rất mới, bắt buộc phải biết để làm những thứ tưởng chừng đơn giản, đó là nav bar.
+        - Học theo [tutorial của chính React Router](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/01-setting-up). Như đã nói ở trên, phần routing trong React rất mới, bắt buộc phải biết để làm những thứ tưởng chừng đơn giản, đó là nav bar.
         
         - Ngoài ra, có thể tham khảo các demo app thực hiện bởi Mr. Lê Quân ở [Facebook group "Pure React"](https://www.facebook.com/groups/purereact/)
 
