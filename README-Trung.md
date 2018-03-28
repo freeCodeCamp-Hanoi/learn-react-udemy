@@ -23,19 +23,27 @@
 
         - Tự làm 2 -3 "app" chỉ có MỘT và CHỈ MỘT trang bằng React. Một app dạng này có thể tham khảo là [Pabla](https://goshakkk.name/pabla/index.html)
 
+        - Đọc[Hướng dẫn sử dụng create-react-app](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md). Phát hiện ra cái này cực kỳ chi tiết, đội Facebook rất chăm chút cho nó, và viết hướng dẫn sử dụng không khác gì hướng dẫn làm app. Đây là 1 điểm khởi đầu rất tốt để phát triển ứng dụng App thay vì sử dụng ReactSimpleStarter của Stephen Grider.
+
         - Học theo [tutorial của chính React Router](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/01-setting-up). Như đã nói ở trên, phần routing trong React rất mới, bắt buộc phải biết để làm những thứ tưởng chừng đơn giản, đó là nav bar.
         
         - Ngoài ra, có thể tham khảo các demo app thực hiện bởi Mr. Lê Quân ở [Facebook group "Pure React"](https://www.facebook.com/groups/purereact/)
 
-    - **Giai đoạn 2**: Học Redux trong các section tiếp theo của "Modern React with Redux".
+    - **Giai đoạn 2**: Học Redux trong các section tiếp theo của "Modern React with Redux". 
 
 ## Bài viết hay
 
 ### Kỹ thuật
-- [https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
+- [https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/): So sánh 2 kỹ thuật tạo form trong React.
+- [Hướng dẫn sử dụng create-react-app](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md): Cực kỳ chi tiết
 
 ### Kinh nghiệm chung
-- [So you completed the official React tutorial. What's next?](https://goshakkk.name/next-steps-official-react-tutorial/)
-- [Where do I get ideas for my learning projects?](https://goshakkk.name/learning-project-ideas/)
-- [5 practical tips to finally learn React in 2018](https://goshakkk.name/tips-finally-learn-react/)
+- [So you completed the official React tutorial. What's next?](https://goshakkk.name/next-steps-official-react-tutorial/): Một vài hướng đi sau khi làm xong tutorial (game X O) trên trang của React. 
+- [Where do I get ideas for my learning projects?](https://goshakkk.name/learning-project-ideas/): Lấy ý tưởng để làm projec tự học ở đâu?
+- [5 practical tips to finally learn React in 2018](https://goshakkk.name/tips-finally-learn-react/): 5 kinh nghiệm thực tế để học React năm 2018
 - [You Might Not Need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367): Bài viết của Dan Abramov - tác giả Redux.
+
+### Nguồn bài viết tiếng Việt
+- [kipalog](https://kipalog.com/search?q=reactjs)
+- [ehkoo](https://ehkoo.com/chu-de/react)
+- [viblog.asia](https://viblo.asia/search?q=reactjs)
