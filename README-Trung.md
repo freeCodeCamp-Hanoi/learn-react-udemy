@@ -20,6 +20,7 @@
         - Học khóa "[React for beginners](https://reactforbeginners.com/) của Wes Bos. Wes Bos nổi tiếng,  mình đã thấy được mời trình bày tại nhiều JS Conference ở châu Âu. Khóa học của Wes Bos cũng *chỉ tập trung* vào React, không hề đụng đến Redux. App trông rất ấn tượng, đủ để người dùng luyện tập với props và state. Ngoài ra còn những thứ hữu ích như:
             - React Router -> thư viện này rất quan trọng, vì nó đụng đến vấn đề chuyển giữa các trang theo kiểu hoàn toàn khác so với web tĩnh (vốn sử dụng thẻ `<a>`)
             - Deploy sản phẩm (liên quan đến authentication, Firebase, now.sh, v.v)
+            - Sử dụng React Developper Tool. Tham khảo bài viết ở [đây](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/README-Trung-react-developper.md).
 
         - Tự làm 2 -3 "app" chỉ có MỘT và CHỈ MỘT trang bằng React. Một app dạng này có thể tham khảo là [Pabla](https://goshakkk.name/pabla/index.html)
 
