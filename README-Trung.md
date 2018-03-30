@@ -32,6 +32,12 @@
 
     - **Giai đoạn 2**: Học Redux trong các section tiếp theo của "Modern React with Redux". 
 
+## App tự làm:
+
+- Kính vạn hoa bản đơn giản: Vẽ 01 siprograph dựa trên các thông số về màu nền, màu nét, và các thông số khác:
+    - Link product: http://travisnguyen.net/react-draw-spirograph/
+    - Link Github repo: https://github.com/ngminhtrung/react-draw-spirograph
+
 ## Bài viết hay
 
 ### Kỹ thuật

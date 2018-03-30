@@ -1,4 +1,10 @@
+Tóm tắt nhanh về Lifecycle của component trong React
+
 Nguồn: [Understanding React.js](https://staminaloops.github.io/undefinedisnotafunction/understanding-react/)
+
+Một số bài tham khảo chi tiết hơn:
+
+- [Tài liệu chính thức của React](https://reactjs.org/docs/react-component.html)
 
 ```js
 import React from 'react';
@@ -75,8 +81,8 @@ const MyReactComponent = React.createClass({
     // trả về true, còn không thì trả về false
       return true;
   },
-
   // Được gọi NGAY TRƯỚC render lần 2
+
   componentWillUpdate(nextProps, nextState) {
     // Không thể gọi this.setState() bên trong method này
   },
