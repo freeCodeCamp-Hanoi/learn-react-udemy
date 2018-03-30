@@ -37,33 +37,33 @@ Ta sẽ test từng bước nói trên thông qua Chrome Developer Tool và Reac
 
 - Chạy app (`npm start`), mở Chrome phần Developer Tool, kéo đến phần React, gõ vào ô Search từ "App", nó sẽ ra đầy đủ cả phần DOM lẫn Props và State của App. Để ý hiện tại `fishes` của State vẫn đang rỗng. 
 
-![AddFishForm](./images/post01/Selection_005.png)
+![AddFishForm](../images/post01/Selection_005.png)
 
-![AddFishForm](./images/post01/Selection_006.png)
+![AddFishForm](../images/post01/Selection_006.png)
 
 - Giữ nguyên như vậy, chuyển sang tab Console. Ở đây, ta có thể gọi `App` thông qua `$r` (đây là mặc định của React Developer Tool). `$r` này đại diện cho component đang được chọn ở bên tab React. Bên tab React mà chọn component khác, thì giá trị của `$r` cũng khác theo. 
 
-![AddFishForm](./images/post01/Selection_007.png)
+![AddFishForm](../images/post01/Selection_007.png)
 
 - Gõ `$r` rồi Enter, ta sẽ thấy hiện ra thông tin về `App` với các properties và method mà nó có. Hàm `addFish()` xuất hiện ở đây, vậy là hàm này đã được thêm thành công vào `App`. 
 
-![AddFishForm](./images/post01/Selection_011.png)
+![AddFishForm](../images/post01/Selection_011.png)
 
 - Gõ tiếp:
 ```js
 $r.addFish({name: "Cá chép sông Hồng", price: 100})
 ``` 
-![AddFishForm](./images/post01/Selection_009.png)
+![AddFishForm](../images/post01/Selection_009.png)
 
 để xem hàm có chạy hay không. Ở tab Console thì không có hiện kết quả, phải quay ngược về tab React, kiểm tra State, fishes. Nhìn hình dưới đây thấy mọi thứ OK rồi. Vậy là ta đã đảm bảo hàm này hoạt động chuẩn ở phạm vi của `App`. 
 
-![AddFishForm](./images/post01/Selection_012.png)
+![AddFishForm](../images/post01/Selection_012.png)
 
 ### Test hàm ở level component `Inventory`:
 
 Làm tương tự như bước trên, vào tab React, gõ vào ô Search chữ "Inventory", ta sẽ có thông tin về component này, kèm theo Props và State của nó (trường hợp này component Inventory không có State). Như hình bên dưới, ta thấy hàm `addFish()` đã được truyền vào props của component Inventory. 
 
-![AddFishForm](./images/post01/Selection_013.png)
+![AddFishForm](../images/post01/Selection_013.png)
 
 Cái này rất quan trọng, để người học hiểu là muốn gọi `addFish()` ở Inventory, phải gọi thông qua props. 
 
@@ -75,7 +75,7 @@ $r.props.addFish({name: 'cá tra Đồng bằng Sông Cửu Long', price: 5000})
 
 Giờ lại quay về React, tìm đến component `App` (bằng việc gõ App vào ô Search), ta thấy con cá vừa rồi đã được thêm thành công vào fishes trong state của App.
 
-![AddFishForm](./images/post01/Selection_014.png)
+![AddFishForm](../images/post01/Selection_014.png)
 
 Vậy là OK đến bước này. Hàm `addFish()` đã hoạt động ngon ở phạm vi của `Inventory`. 
 
