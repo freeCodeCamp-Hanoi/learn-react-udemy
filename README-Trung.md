@@ -32,11 +32,24 @@
 
     - **Giai đoạn 2**: Học Redux trong các section tiếp theo của "Modern React with Redux". 
 
+- 01.04.2018: Styling rất quan trọng. Ko nắm vững CSS (CSS thuần hoặc các framework) thì viết component cũng bằng thừa, vì không biết cách căn chinh, tinh chỉnh các element như thế nào. Sau khi học được basic của basic của React, lại chuyển qua đọc và clone example của Bootstrap. 
+
 ## App tự làm:
 
-- Kính vạn hoa bản đơn giản: Vẽ 01 siprograph dựa trên các thông số về màu nền, màu nét, và các thông số khác:
+
+
+- [:heavy_check_mark:] Kính vạn hoa bản đơn giản: Vẽ 01 siprograph dựa trên các thông số về màu nền, màu nét, và các thông số khác:
     - Link product: http://travisnguyen.net/react-draw-spirograph/
     - Link Github repo: https://github.com/ngminhtrung/react-draw-spirograph
+- [:heavy_check_mark:] Album sample clone từ 1 ví dụ "[Album](https://getbootstrap.com/docs/4.0/examples/album/)"của Bootstrap 4.0. Mục đích để test cách sử dụng React với Bootstrap 4.0, việc style cho component ra sao.
+    - Link product: http://travisnguyen.net/react-album-hanoi,
+    - Link Github repo: https://github.com/ngminhtrung/react-album-hanoi
+- Kế hoạch:
+    - App chèn quote vào ảnh giống app Pabla nói trên
+    - App giúp search, chọn, và copy vào clipboard Emjoi. List ở [đây](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
+    - App sun calculator
+    - App visualize regular expression
+    - Những module nhỏ như ở [đây](https://huynhsamha.github.io/create-react-app-config/)
 
 ## Bài viết hay
 
@@ -54,6 +67,9 @@
 - [kipalog](https://kipalog.com/search?q=reactjs)
 - [ehkoo](https://ehkoo.com/chu-de/react)
 - [viblog.asia](https://viblo.asia/search?q=reactjs)
+
+### Khóa học tham khảo khác
+- [DevTips - React JS prototyping - Building a high-fidelity prototype](https://www.youtube.com/playlist?list=PLqGj3iMvMa4LFqyGab_aR7M0zfQm2KTuX): Khóa học này hay ở chỗ nào? Vì có từ "prototyping". Điều này giúp hình dung việc làm prototype cho sản phẩm thật nhanh bằng ReactJS thay vì sử dụng html với css tĩnh truyền thống. Có một vài đoạn cùng tư duy với 2 người làm video khá vui.
 
 ## Ghi chú chi tiết:
 
