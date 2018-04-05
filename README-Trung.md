@@ -36,8 +36,6 @@
 
 ## App tự làm:
 
-
-
 - [:heavy_check_mark:] Kính vạn hoa bản đơn giản: Vẽ 01 siprograph dựa trên các thông số về màu nền, màu nét, và các thông số khác:
     - Link product: http://travisnguyen.net/react-draw-spirograph/
     - Link Github repo: https://github.com/ngminhtrung/react-draw-spirograph
@@ -51,7 +49,7 @@
     - App visualize regular expression
     - Những module nhỏ như ở [đây](https://huynhsamha.github.io/create-react-app-config/)
 
-## Bài viết hay
+## Link hay
 
 ### Kỹ thuật
 - [https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/): So sánh 2 kỹ thuật tạo form trong React.
@@ -68,6 +66,12 @@
 - [ehkoo](https://ehkoo.com/chu-de/react)
 - [viblog.asia](https://viblo.asia/search?q=reactjs)
 
+### Boilerplate
+
+- [creat-react-app](https://github.com/facebook/create-react-app/): Boilerplate chính thức của Facebook cho ReactJS. Không biết có gọi là ngon bổ rẻ không. Thuần React, không có Redux. Config sẵn hết, chỉ việc khởi tạo, chạy, deploy lên Github Pages rất dễ (nhất là khi không có router).
+- [ReactSimpleStarter](https://github.com/StephenGrider/ReduxSimpleStarter): Boilerplate của Stephen Grider cho khóa "Modern React with Redux". Chứa cả Redux lẫn React Router. Cái này sẽ dùng khi học khóa học kia. Còn có dùng tiếp không thì chắc cần cân nhắc. 
+- [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate): Không rõ của ai, chắc là một open-source project. Được quảng cáo là "*A highly scalable, offline-first foundation with the best developer experience and a focus on performance and best practices.*". Được Cường (Techmaster, Framgia) khuyên dùng. Trông thì hoành tráng và nhiều chức năng.
+
 ### Khóa học tham khảo khác
 - [DevTips - React JS prototyping - Building a high-fidelity prototype](https://www.youtube.com/playlist?list=PLqGj3iMvMa4LFqyGab_aR7M0zfQm2KTuX): Khóa học này hay ở chỗ nào? Vì có từ "prototyping". Điều này giúp hình dung việc làm prototype cho sản phẩm thật nhanh bằng ReactJS thay vì sử dụng html với css tĩnh truyền thống. Có một vài đoạn cùng tư duy với 2 người làm video khá vui.
 
@@ -82,3 +86,8 @@
 1. Làm sao truyền props vào component để thay đổi style của component đó?
 2. Trong hướng dẫn sử dụng "create-reat-app" có mục "ejecting". Vậy "ejecting" là gì?
 3. Có thể truyền props để đổi class của component được hay không?
+
+
+## Component Lifecycle Methods
+
+![LifecycleMethods](./images/react-component-lifecycle-illustration.png)
