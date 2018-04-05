@@ -48,6 +48,14 @@
     - App sun calculator
     - App visualize regular expression
     - Những module nhỏ như ở [đây](https://huynhsamha.github.io/create-react-app-config/)
+    - Clone lại [app "Coffee House" của Lê Quân](https://github.com/quanla/pure-react-sample-coffee), nhưng cho chủ đề "thu rác thải điện tử":
+        - Inspired by this [post](https://www.facebook.com/minhcuong/posts/10155720490979495)
+        - Homepage: Tác hại của rác thải điện tử 
+        - Người dùng có thể đăng nhập để lưu thông tin
+        - Người dùng điền:
+            - Thông tin cá nhân
+            - Địa chỉ
+            - Số lượng và loại rác thải
 
 ## Link hay
 
