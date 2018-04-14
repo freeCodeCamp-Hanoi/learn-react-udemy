@@ -47,7 +47,12 @@
     - App giúp search, chọn, và copy vào clipboard Emjoi. List ở [đây](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
     - App sun calculator
     - App visualize regular expression
-    - Những module nhỏ như ở [đây](https://huynhsamha.github.io/create-react-app-config/)
+    - Những module nhỏ như ở [đây](https://huynhsamha.github.io/create-react-app-config/):
+        - Form "Shopping cart" clone của Thế giới Di Động
+    - Những app được nhắc đến trong khóa React Native của Techmaster. Xem ở [đây](https://techmaster.vn/khoa-hoc/25567/react-native):
+        - Ứng dụng Shopping List, quản lý danh sách các mặt hàng cần mua, thêm bớt, xoá và lưu dữ liệu vào App
+        - RSS Reader: App cập nhật và quản lý danh sách tin tức thời sự cập nhật.
+        - Ứng dụng đặt xe(Car Booking App): có chức năng hiển thị bản đồ, tìm kiếm địa điểm, xe, ghim một vị trí trên bản đồ. Có hướng dẫn tạo các hiệu ứng Animations đẹp mắt.
     - Clone lại [app "Coffee House" của Lê Quân](https://github.com/quanla/pure-react-sample-coffee), nhưng cho chủ đề "thu rác thải điện tử":
         - Inspired by this [post](https://www.facebook.com/minhcuong/posts/10155720490979495)
         - Homepage: Tác hại của rác thải điện tử 
