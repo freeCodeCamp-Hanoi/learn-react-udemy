@@ -37,18 +37,20 @@
 ## App tự làm:
 
 - [:heavy_check_mark:] Kính vạn hoa bản đơn giản: Vẽ 01 siprograph dựa trên các thông số về màu nền, màu nét, và các thông số khác:
-    - Link product: http://travisnguyen.net/react-draw-spirograph/
+    - Link product: http://ngminhtrung.github.io/react-draw-spirograph/
     - Link Github repo: https://github.com/ngminhtrung/react-draw-spirograph
 - [:heavy_check_mark:] Album sample clone từ 1 ví dụ "[Album](https://getbootstrap.com/docs/4.0/examples/album/)"của Bootstrap 4.0. Mục đích để test cách sử dụng React với Bootstrap 4.0, việc style cho component ra sao.
-    - Link product: http://travisnguyen.net/react-album-hanoi,
+    - Link product: http://ngminhtrung.github.io/react-album-hanoi,
     - Link Github repo: https://github.com/ngminhtrung/react-album-hanoi
+- [📊] Shopping cart - clone lại form của Thegioididong.com. Mục đích để tập làm 1 form thật, sử dụng các khái niệm cơ bản của ReactJS như props, state. Chỉ dùng CSS3 và flexbox.
+    - Link product: https://ngminhtrung.github.io/react-form-shopping-cart
+    - Link Github repo: https://github.com/ngminhtrung/react-form-shopping-cart
 - Kế hoạch:
     - App chèn quote vào ảnh giống app Pabla nói trên
     - App giúp search, chọn, và copy vào clipboard Emjoi. List ở [đây](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
     - App sun calculator
     - App visualize regular expression
     - Những module nhỏ như ở [đây](https://huynhsamha.github.io/create-react-app-config/):
-        - Form "Shopping cart" clone của Thế giới Di Động
     - Những app được nhắc đến trong khóa React Native của Techmaster. Xem ở [đây](https://techmaster.vn/khoa-hoc/25567/react-native):
         - Ứng dụng Shopping List, quản lý danh sách các mặt hàng cần mua, thêm bớt, xoá và lưu dữ liệu vào App
         - RSS Reader: App cập nhật và quản lý danh sách tin tức thời sự cập nhật.
