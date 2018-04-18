@@ -48,8 +48,8 @@
 - Kế hoạch:
     - App chèn quote vào ảnh giống app Pabla nói trên
     - App giúp search, chọn, và copy vào clipboard Emjoi. List ở [đây](https://github.com/StylishThemes/GitHub-Dark/wiki/Emoji)
-    - App sun calculator
-    - App visualize regular expression
+    - App sun calculator, tương tự như trang [này](suncalc.net/)
+    - App visualize regular expression, tương tự như trang [này](https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24)
     - Những module nhỏ như ở [đây](https://huynhsamha.github.io/create-react-app-config/):
     - Những app được nhắc đến trong khóa React Native của Techmaster. Xem ở [đây](https://techmaster.vn/khoa-hoc/25567/react-native):
         - Ứng dụng Shopping List, quản lý danh sách các mặt hàng cần mua, thêm bớt, xoá và lưu dữ liệu vào App
@@ -63,7 +63,13 @@
             - Thông tin cá nhân
             - Địa chỉ
             - Số lượng và loại rác thải
-
+    - Một vài gợi ý tại [đây](https://daveceddia.com/pure-react/?utm_campaign=after-post):
+        - Fake Github
+        - Shopping cart 
+        - Clone of Slack
+        - Reddit 
+        - Hacker News 
+        - Pinterest
 ## Link hay
 
 ### Kỹ thuật
@@ -92,6 +98,7 @@
 
 ## Ghi chú chi tiết:
 
+- [So sánh nhanh ReactJS form: controlled vs. uncontrolled](https://kipalog.com/posts/ReactJS---Uncontrolled-vs-controlled-forms)
 - [Sử dụng React Developper Tool để sờ nắn được state, props, method](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/posts/Trung-react-developper.md)
 - [Style trong React như thế nào](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/posts/Trung-style-in-react.md)
 
