@@ -101,7 +101,8 @@
 - [So sánh nhanh ReactJS form: controlled vs. uncontrolled](https://kipalog.com/posts/ReactJS---Uncontrolled-vs-controlled-forms)
 - [Sử dụng React Developper Tool để sờ nắn được state, props, method](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/posts/Trung-react-developper.md)
 - [Style trong React như thế nào](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/posts/Trung-style-in-react.md)
-
+- [Hoàng Đức Quân - Cài đạt môi trường ReactJS trên Codepen](https://viblo.asia/p/tao-1-ung-dung-doc-api-voi-react-va-axios-RQqKLzo4l7z#-cai-dat-moi-truong-3)
+- [Simple ReactJS template trên Codepen](https://codepen.io/ngminhtrung/pen/erYmPd)
 
 ## Danh sách câu hỏi:
 
