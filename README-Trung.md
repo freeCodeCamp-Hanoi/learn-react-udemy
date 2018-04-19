@@ -96,6 +96,10 @@
 ### Khóa học tham khảo khác
 - [DevTips - React JS prototyping - Building a high-fidelity prototype](https://www.youtube.com/playlist?list=PLqGj3iMvMa4LFqyGab_aR7M0zfQm2KTuX): Khóa học này hay ở chỗ nào? Vì có từ "prototyping". Điều này giúp hình dung việc làm prototype cho sản phẩm thật nhanh bằng ReactJS thay vì sử dụng html với css tĩnh truyền thống. Có một vài đoạn cùng tư duy với 2 người làm video khá vui.
 
+### Reading list 
+- [ ] [React in Pattern - Krasimir Tsonev](https://krasimir.gitbooks.io/react-in-patterns/content/)
+
+
 ## Ghi chú chi tiết:
 
 - [So sánh nhanh ReactJS form: controlled vs. uncontrolled](https://kipalog.com/posts/ReactJS---Uncontrolled-vs-controlled-forms)
@@ -109,7 +113,6 @@
 1. Làm sao truyền props vào component để thay đổi style của component đó?
 2. Trong hướng dẫn sử dụng "create-reat-app" có mục "ejecting". Vậy "ejecting" là gì?
 3. Có thể truyền props để đổi class của component được hay không?
-
 
 ## Component Lifecycle Methods
 
