@@ -1,15 +1,26 @@
-### Bài toán: Validate 1 field
+### Bài toán: Validate form
 
 Bắt chước tính năng validate form như hình dưới (thegioididong.com):
 
 ![Form Validation](Peek-2018-04-21-10-42.gif)
 
-Yêu cầu:
+**Yêu cầu**:
 1. Chỉ cần kiểm tra xem số điện thoại nhập vào có bao gồm 10 đến 11 chữ số hay không.
 2. Việc kiểm tra chỉ được thực hiện khi chuyển ra ngoài vùng nhập điện thoại (ví dụ khi click chuột ra chỗ khác, hoặc tab chuyển sang vùng khác).
 3. Thông báo màu đỏ "*Số điện thoại phải có 10 - 11 chữ số*" hiện bên dưới khi có lỗi, và biến mất khi không có lỗi.
 
-### Thực hiện
+**tldr;** **(Dài quá, ứ đọc)**:
+- Bài viết thích hợp cho những người mới học ReactJS, muốn tham khảo về cách để validate cho 01 input, hoặc từ 02 input trở lên. 
+- Việc validate form sẽ giúp đụng vào các phần cơ bản của ReactJS cũng như JavaScript
+    - component, props, và state.
+    - render component theo điều kiện (xem mục [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html))
+    - ôn lại phần HTML form event
+    - thử các cách để copy object, thay đổi object `state` ở những tầng nằm sâu thông qua `setState()` cũng như cú pháp xử lý object của ES6.
+    - ôn lại cách dùng regular expression để kiểm tra chuỗi đầu vào tùy theo yêu cầu.  
+- Việc hiển thị thông báo lỗi bên dưới input, không chi 1 input, mà 2 hoặc nhiều hơn, sẽ cần thực hành về CSS layout (ví dụ float, flexbox, grid).
+- Demo sản phẩm cuối ở [đây](https://ngminhtrung.github.io/react-form-shopping-cart/)
+
+### Thực hiện: Validate 1 field "phonenumber"
 
 Với 2 yêu cầu trên, hướng làm chung là:
 
@@ -32,7 +43,7 @@ Với 2 yêu cầu trên, hướng làm chung là:
     ```
 
 - **Yêu cầu 2**: 
-    - Việc kiểm tra sẽ dựa vào event handler ["onblur" trong dãy FocusEvent Object](https://www.w3schools.com/jsref/obj_focusevent.asp). 
+    - Việc kiểm tra sẽ dựa vào event handler ["onBlur" trong dãy FocusEvent Object](https://www.w3schools.com/jsref/obj_focusevent.asp). 
     - Truyền hàm callback vào event handler `onBlur` của `<input>`, callback này chính là method `validateInput` nói trên.
     - Hàm callback này sẽ nhận vào value của input thông qua `this.state.value`. State này là của component cha chứa `<input>`.
     - Để hàm callback luôn nhận value mới nhất của input, thì bản thân input cũng phải có event handler `onChange`, cập nhật liên tục input value vào state (thông qua `setState()`).
@@ -94,11 +105,9 @@ Với 2 yêu cầu trên, hướng làm chung là:
     ```javascript
     function FormError(props) {
         /* nếu isHidden = true, return null ngay từ đầu */
-
         if (props.isHidden) { return null;}
 
-        const customStyle = { display: ''};
-        return ( <div style={customStyle}>{props.errorMessage}</div>)
+        return ( <div>{props.errorMessage}</div>)
     }
     ```
 
@@ -106,8 +115,9 @@ Sample code xem tại đây:
 
 ### Nếu cần validate từ 2 input trở lên?
 
-Nếu muốn validate không những *phonenumber* mà cả *fullname* (Họ và tên không được có ký tự số), hoặc nhiều input nữa trong 1 cụm?  Về logic vẫn làm theo cách trên, nhưng chú ý thêm về:
+![Form Validation 2 inputs](Peek-2018-04-21-21-06.gif)
 
+Nếu muốn validate không những *phonenumber* mà cả *fullname* (Họ và tên không được có ký tự số), hoặc nhiều input nữa trong 1 cụm?  Về logic vẫn làm theo cách trên, nhưng chú ý thêm về:
 
 0. Setup html, 2 `<input>` với attribute `name` rõ ràng, kèm theo 2 component `<FormError />`:
 
@@ -131,7 +141,9 @@ Nếu muốn validate không những *phonenumber* mà cả *fullname* (Họ và
         errorMessage={this.state.fullname.errorMessage} />
     ```
 
-1. Cấu trúc object `state` sao để việc `setState()` cho những tầng sâu bên dưới được thuận lợi. Lúc đầu mình đặt object `state` khá lủng củng, nên không sao truyền giá trị mới cho những thuộc tính mình cần. Cách tạo object đề nghị cho phần này:
+1. Cấu trúc lại object `state` để việc `setState()` cho những tầng sâu bên dưới của object `state` được thuận lợi. 
+
+    Lúc đầu mình đặt object `state` khá lủng củng, nên không sao truyền được giá trị mới cho những thuộc tính mình cần. Cách tạo object đề nghị cho phần này:
 
     ```javascript
     /* Tạo object state trong constructor của component cha chứa input */
@@ -199,5 +211,9 @@ Nếu muốn validate không những *phonenumber* mà cả *fullname* (Họ và
 
 4. Vấn đề styling cần phải tùy chỉnh tùy theo nhu cầu.
 
+### Kết luận
 
+- Vẫn cần tìm hiểu các "best practices" vụ form validation để so sánh với cách làm trên. Về mặt lý thuyết, cách làm trên tương đối chân phương, không có gì đặc sắc. 
+- Bài [How to do Simple Form Validation in #Reactjs](https://learnetto.com/blog/how-to-do-simple-form-validation-in-reactjs) hoặc bản dịch (ẩu) sang tiếng Việt "[Simple Form Validation in Reactjs](https://viblo.asia/p/simple-form-validation-in-reactjs-1VgZvxoM5Aw)" cũng trình bày cách validate 2 inputs cùng 1 lúc. Nhưng họ tận dụng ngay event handler "onChange", đặt callback bên trong callback của ongChange. Việc này khiến cho quá trình validation lúc nào cũng phải thực hiện khi có bất kỳ thay đổi của input. Hơn nữa, việc sắp xếp object `state` cũng không khoa học.
+- Tham khảo sau này bài [The React and React Native Event System Explained: A Harmonious Coexistence](https://levelup.gitconnected.com/how-exactly-does-react-handles-events-71e8b5e359f2) trong đó tác giả trình tìm hiểu source code của React, rồi trình bày cơ chế mà ReactJS dùng để xử lý các events. 
 
