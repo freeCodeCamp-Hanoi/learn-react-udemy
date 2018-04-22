@@ -217,3 +217,37 @@ Nếu muốn validate không những *phonenumber* mà cả *fullname* (Họ và
 - Bài [How to do Simple Form Validation in #Reactjs](https://learnetto.com/blog/how-to-do-simple-form-validation-in-reactjs) hoặc bản dịch (ẩu) sang tiếng Việt "[Simple Form Validation in Reactjs](https://viblo.asia/p/simple-form-validation-in-reactjs-1VgZvxoM5Aw)" cũng trình bày cách validate 2 inputs cùng 1 lúc. Nhưng họ tận dụng ngay event handler "onChange", đặt callback bên trong callback của ongChange. Việc này khiến cho quá trình validation lúc nào cũng phải thực hiện khi có bất kỳ thay đổi của input. Hơn nữa, việc sắp xếp object `state` cũng không khoa học.
 - Tham khảo sau này bài [The React and React Native Event System Explained: A Harmonious Coexistence](https://levelup.gitconnected.com/how-exactly-does-react-handles-events-71e8b5e359f2) trong đó tác giả trình tìm hiểu source code của React, rồi trình bày cơ chế mà ReactJS dùng để xử lý các events. 
 
+### Cập nhật
+
+Theo góp ý của Mr. Nguyễn Bình, group Pure React, những phần sau có thể cải tiến:
+
+1. Validation mình sẽ đẩy xuống đến level của input: tạo một component bao gồm cả input và FormError, sau đó truyền các validator vào. Component này tự xử lý vấn đề validate của chính nó.
+
+    Phản hồi: Chuẩn. Phần component sẽ viết thành `<FormInput>` kiểu mới như sau. Trông code của component cha chứa `<FormInput>` sẽ gọn gàng sạch sẽ hơn nhiều. Chưa kể phần xử lý layout sẽ gọn hơn, bởi mảng nào đi mảng đấy. Nếu tách riêng `<input>` và `<FormError>` ngay từ bên ngoài, thì xử lý responsive layout riêng cho `<FormError>` hơi mệt.
+
+    ```html
+        <!-- Kiểu cũ -->
+        <input ... />
+        <FormError 
+            isHidden={this.state.isInputValid} 
+            errorMessage={this.state.errorMessage} />
+
+        <!-- Viết lại thành -->
+        <FormInput name="phonenumber" />
+    ```
+
+2. isInputValid bản chất nội suy từ errorMessage, không cần thiết trong trường hợp này.
+
+    Phản hồi: Chuẩn. `isInputValid` có thể nội suy từ `length` của `errorMessage`. 
+
+    ```js
+    const isInputValid = (errorMessage.length > 0) ? false : true; 
+    ```
+
+3. bạn nên bắt một lúc nhiều validation cho một trường. Ví dụ trường email vừa là required, vừa là email format. khi hiện ra nhiều validation cùng lúc sẽ giúp UX tuyệt hơn (vì họ biết hết các validate họ gặp phải mà ko phải solve one by one).
+
+    Phản hồi: Chuẩn.
+
+4. dùng HOF để validate cũng là một điều không tồi :D
+
+    Phản hồi: Phải đọc thêm HOF.

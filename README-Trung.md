@@ -102,6 +102,7 @@
 
 ## Ghi chú chi tiết:
 
+- [ReactJS - Form validation với một hoặc nhiều inputs](https://kipalog.com/posts/ReactJS---Form-validation-voi-mot-hoac-nhieu-inputs)
 - [So sánh nhanh ReactJS form: controlled vs. uncontrolled](https://kipalog.com/posts/ReactJS---Uncontrolled-vs-controlled-forms)
 - [Sử dụng React Developper Tool để sờ nắn được state, props, method](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/posts/Trung-react-developper.md)
 - [Style trong React như thế nào](https://github.com/freeCodeCamp-Hanoi/learn-react-udemy/blob/master/posts/Trung-style-in-react.md)
